@@ -213,7 +213,7 @@ BasisTextureLoader.prototype = Object.assign( Object.create( Loader.prototype ),
 
 			// Load transcoder wrapper.
 			var jsLoader = new FileLoader( this.manager );
-			jsLoader.setPath( this.transcoderPath );
+			// jsLoader.setPath( this.transcoderPath );
 			jsLoader.setWithCredentials( this.withCredentials );
 			var jsContent = new Promise( ( resolve, reject ) => {
 
@@ -224,7 +224,7 @@ BasisTextureLoader.prototype = Object.assign( Object.create( Loader.prototype ),
 
 			// Load transcoder WASM binary.
 			var binaryLoader = new FileLoader( this.manager );
-			binaryLoader.setPath( this.transcoderPath );
+			// binaryLoader.setPath( this.transcoderPath );
 			binaryLoader.setResponseType( 'arraybuffer' );
 			binaryLoader.setWithCredentials( this.withCredentials );
 			var binaryContent = new Promise( ( resolve, reject ) => {
