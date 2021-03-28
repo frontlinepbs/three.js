@@ -217,7 +217,8 @@ BasisTextureLoader.prototype = Object.assign( Object.create( Loader.prototype ),
 			jsLoader.setWithCredentials( this.withCredentials );
 			var jsContent = new Promise( ( resolve, reject ) => {
 
-				jsLoader.load( 'basis_transcoder.js', resolve, undefined, reject );
+        jsLoader.load( 'https://unpkg.com/three@0.126.1/examples/js/libs/basis/basis_transcoder.js', resolve, undefined, reject );
+
 
 			} );
 
@@ -228,7 +229,8 @@ BasisTextureLoader.prototype = Object.assign( Object.create( Loader.prototype ),
 			binaryLoader.setWithCredentials( this.withCredentials );
 			var binaryContent = new Promise( ( resolve, reject ) => {
 
-				binaryLoader.load( 'basis_transcoder.wasm', resolve, undefined, reject );
+        binaryLoader.load( 'https://unpkg.com/three@0.126.1/examples/js/libs/basis/basis_transcoder.wasm', resolve, undefined, reject );
+
 
 			} );
 
